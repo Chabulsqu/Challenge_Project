@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>HTML and CSS Cheatsheet</title>
+        <link rel="stylesheet" type="text/css" href="Resources/styles.css">
+        <link rel="icon" type="image/png" href="Resources/icon.png"> 
+        <meta name="charset" content="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Having troubles on learning web development? Check this page to know more!">
+        <meta name="keywords" content="programming, css, html, web, dev, development">
+    </head>
+    <body>
+        <header id="home">
+            <h1>Mateo's Cheatsheet</h1>
+           <nav>
+                <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Welcome!</h2>
+            <p>HTML (Hyper Text Markdown Language) and CSS (Cascade Style Sheeting) are both extremely used languages along the web, used on things like the page you're seeing right
+            now, but how do they work? All websites are made of an html containing the text and media of the web, as well as the metadata for search engines and browsers like the
+            one you are using. Html is made out of tags en closed in &lt;&gt;. Some of the most used tags in the internet are the &lt;h1&gt;-&lt;h6&gt for headings, &lt;img&gt;
+            for images and &lt;p&gt for paragraphs like this. Css is used for the graphic design of the web sites and it's the reason why we have nice looks on every page.</p>
+            <br>
+            <section id="html">
+            <h3>HTML Forms</h3>
+            <p>Html forms can be confusing at the beginning, if you don't know how to make one then check this table. Be sure to always include opening and closing &lt;
+            form&gt; tags and a &lt;button&gt; one to send the information. </p>
+                <table>
+                <thead>
+                    <tr>
+                        <th class="important">Form</th>
+                        <th class="important">Syntax</th>
+                        <th class="important">Function</th>
+                        <th class="important">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Text</td>
+                        <td class="code">&lt;input type="text" name="example"&gt;</td>
+                        <td>Shows a text field that can be completed using letters and numbers</td>
+                        <td><img src="./Resources/Images/text.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td class="code">&lt;input type="password" name="example"&gt;</td>
+                        <td>Shows a text field where user can enter a password without this being visible</td>
+                        <td><img src="./Resources/Images/password.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Numbers</td>
+                        <td class="code">&lt;input type="text" name="example"&gt;</td>
+                        <td>Shows a number-only field that can be filled using two arrows buttons</td>
+                        <td><img src="./Resources/Images/numbers.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td class="code">&lt;input type="range" name="example" min="1" max="10" step"0,5"&gt;</td>
+                        <td>Shows a bar that users can slide to represent a value</td>
+                        <td><img src="./Resources/Images/range.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Radio Buttons</td>
+                        <td class="code">&lt;input type="radio" name="example" value="example"&gt;</td>
+                        <td>Shows a button that can only be clicked once at a time</td>
+                        <td><img src="./Resources/Images/radio.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Checkboxes</td>
+                        <td class="code">&lt;input type="checkbox" name="example" value="example"&gt;</td>
+                        <td>Shows multiple checkboxes that can be selected at the same time</td>
+                        <td><img src="./Resources/Images/checkbox.png"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="important" colspan="4"><strong>Remember to always specify a name for the information that is going to be sent to the server with the "name" attribute</strong></td>
+                    </tr>
+                </tfoot>
+                </table>
+            </section>
+            <section id="css">
+                <h3>Time for Design!</h3>
+                <p>Css properties and selectors can be kind of tricky, but with enough dedication you will be able to understand them all. You can add Css directly into a html
+                document either using the attribute "style" or by using the &lt;style&gt; tag.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="important">Property</th>
+                            <th class="important">Values</th>
+                            <th class="important">Function</th>
+                            <th class="important">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Color/background-color</td>
+                            <td>rgb, hexadecimal, hsl colors or keywords</td>
+                            <td>Changes either the font or the background's color of the element</td>
+                            <td><img src="./Resources/Images/color.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Font-family</td>
+                            <td>One or more fonts, either web safe or imported from a site like Google Fonts</td>
+                            <td>Changes the default font design of the element</td>
+                            <td><img src="./Resources/Images/font.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Font-weight</td>
+                            <td>numerical value (0 to 1000) or keywords like bold or light</td>
+                            <td>Changes the weight of an element's text</td>
+                            <td><img src="./Resources/Images/weight.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Text-align</td>
+                            <td>left, center, right or justify</td>
+                            <td>Chanfes the way an element's text is alligned</td>
+                            <td><img src="./Resources/Images/align.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Border</td>
+                            <td>X number of px, border style (solid, ect) and color</td>
+                            <td>Changes the thickness, style and color of the border of an element</td>
+                            <td><img src="./Resources/Images/border.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Margin</td>
+                            <td>A px value like "100 px" or "200px 500px" to change both vertical and horizontal margin.</td>
+                            <td>Specifies the margin from the element</td>
+                            <td><img src="./Resources/Images/margin.png"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="important" colspan="4"><strong>Remember to always use {} curly brackets at the start and end of a declaration</strong></td>
+                        </tr>
+                    </tfoot>
+                    </table>            
+            </section>
+        </main>
+        <footer id="about">
+            <p>This should include the html and css basics, hope you enjoyed this page. Made by Mateo for my first Codeacademy Challenge project</p>
+            <p><a href="https://developer.mozilla.org/" target="_blank">Visit the Mozilla Developer Web Docs</a></p>
+            <a href="https://www.codecademy.com/"><img src="./Resources/Codeacademy.png" alt="The Codeacademy logo" width="600" height="126.5"></a>
+        </footer>
+    </body>
+</html>
