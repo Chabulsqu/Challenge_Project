@@ -96,55 +96,55 @@ a:hover {
     width: 40px;
 }
 
-#beige {
+.beige {
     background-color: beige;
 }
-#darkcyan {
+.darkcyan {
     background-color: darkcyan;
 }
-#coral {
+.coral {
     background-color: coral;
 }
-#darkslateblue {
+.darkslateblue {
     background-color: darkslateblue;
 }
-#dimgrey {
+.dimgrey {
     background-color: dimgrey;
 }
-#black {
+.black {
     background-color: black;
 }
-#blanchedalmond {
+.blanchedalmond {
     background-color: blanchedalmond;
 }
-#seashell {
+.seashell {
     background-color: seashell;
 }
-#grey {
+.grey {
     background-color: grey;
 }
-#ghostwhite {
+.ghostwhite {
     background-color: ghostwhite;
 }
-#pink {
+.pink {
     background-color:#ea4b8b
 }
-#purple {
+.purple {
     background-color: #7f59b0;
 }
-#blue {
+.blue {
     background-color: #63c5ea;
 }
-#yellow {
+.yellow {
     background-color: #fcb424;
 }
-#slategrey {
+.slategrey {
     background-color: slategrey;
 }
-#pinkdark {
+.pinkdark {
     background-color: #ea4b8b88;
 }
-#purpledark {
+.purpledark {
     background-color: #7f59b088;
 }
 
