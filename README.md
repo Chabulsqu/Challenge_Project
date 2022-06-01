@@ -1,5 +1,5 @@
 ## Codecademy Projects
-Here I'll store all my Codecademy challenge projects and all the files related to that.
+Here I'll store all my Codecademy challenge projects and all the files related to them.
 ### Link to the projects
   
 - [Cheatsheet](/Cheatsheet)
