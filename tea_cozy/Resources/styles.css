@@ -1,0 +1,156 @@
+* {
+    margin: 0 auto;
+}
+
+/* Text and colors */
+
+img {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+body {
+    background-color: black;
+}
+h2, h3, h4, h5{
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    opacity: 1;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    opacity: 0.9;
+    font-size: 22px;
+    text-align: center;
+}
+li {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    font-size: 22px;
+    text-decoration: underline;
+}
+a {
+    color: seashell;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Menu */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+ul {
+    list-style: none;
+}
+
+#mission {
+    display: inline-block;
+    position: fixed;
+    left: 1200px;
+    bottom: 910px;
+}
+#featured {
+    display: inline-block;
+    position: fixed;
+    left: 1300px;
+    bottom: 910px;
+}
+#locations {
+    display: inline-block;
+    position: fixed;
+    left: 1455px;
+    bottom: 910px;
+}
+
+/* Teas and Locations */
+
+main {
+    position: relative;
+    top: 69px;
+}
+
+.introduction {
+    height: 700px;
+    width: 1200px;
+    background-image: url('./Images/img-mission-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.container {
+    margin: 50px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image {
+    margin: 10px 15px 15px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 30px;
+}
+.teas {
+    margin: 60px auto;
+}
+.location_cont {
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    background-image: url('Images/img-locations-background.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-content: center; 
+    align-items: center;
+}
+.location_box {
+    display: inline-block;
+    background-color: black;
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+    margin: 15px 40px;
+    line-height: 80px;
+}
+
+#introduction_text {
+    position: relative;
+    top: 285px;
+    background-color: black;
+    height: 130px;
+    line-height: 60px;
+}
+#location_title {
+    position: relative;
+    top: 50px;
+    font-size: 25px;
+}
+#alt {
+    margin-left: 240px;
+}
+#alt2 {
+    margin-right: 240px;
+}
+
+/* More Information */
+
+footer {
+    height: 200px;
+    line-height: 50px;
+}
+aside {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    opacity: 0.9;
+    font-size: 22px;
+    margin-left: 20px;
+}

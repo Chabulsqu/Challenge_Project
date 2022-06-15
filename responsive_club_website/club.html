@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Coders Club</title>
+        <link rel="stylesheet" type="text/css" href="./Resources/reset.css">
+        <link rel="stylesheet" type="text/css" href="./Resources/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+        <meta name="charset" content="UTF-8">
+        <meta name="description" content="Welcome to the first sport club made by and for programmers, The Coders Club">
+        <meta name="keywords" content="code, programming, sport, football, swimming, basketball">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img class="logo desktop" src="./Resources/Images/main_logo.png" alt="The Code Club logo" />
+            <nav>
+            <ul class="desktop" role="presentation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#join">Join</a></li>
+            </ul>
+            <img class="mobile logo" src="./Resources/Images/shield_logo.png" alt="Our Shield">
+            <ul class="mobile" role="presentation">
+                <li><a href="#"><img src="./Resources/Images/home.png" alt="The home button"></a></li>
+                <li class="button center"><a href="#join">Join</a></li>
+                <li><a href="#email"><img src="./Resources/Images/mail.png" alt="The email button"></a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+         <section class="hero">
+             <h1 tabindex="0">The club for Programmers like you</h1>
+             <p class="center desktop">Compete in your favourite activities, hang out an have fun with friends while learning to code in the first programmer-oriented sports club</p>
+             <h2 class="center" tabindex="0">Our Partners</h2>
+            <div class="flex">
+             <img src="./Resources/Images/aven.png" alt="The Aven logo" />
+             <img src="./Resources/Images/circle.png" alt="The Circle logo" />
+             <img src="./Resources/Images/treva.png" alt="The Treva logo" />
+            </div>
+         </section>
+         <article class="sports">
+            <h2>Sports</h2>
+            <div class="flex">
+            <div class="image-container center">
+             <img src="./Resources/Images/soccer.jpg" alt="A soccer ball" />
+             <p class="desktop" tabindex="0">Our Football team is on its top category and has Sub-14, Sub-16, Sub-18 and Senior Divisions. Inscriptions are free and with no needed trials. We are also working on a futsal team.</p>
+            </div>
+            <div class="image-container center">
+             <img src="./Resources/Images/basketball.jpg" alt="A basketball ring" />
+             <p class="desktop" tabindex="0">We have several basketball courts (5 vs 5 and 3 vs 3) and a big stadium, our team is young but we have already won 2 championships.</p>
+            </div>
+            <div class="image-container center">
+             <img src="./Resources/Images/swimming.jpg" alt="A person swimming" />
+             <p class="desktop" tabindex="0">We have swimming classes for different ages so you can learn to survive on the water by yourself, we also organize interclub competitions.</p>
+            </div>
+            </div>
+         </article>
+         <article class="join">
+            <h2>Join</h2>
+            <h3>What do you need?</h3>
+            <div class="flex" role="">
+             <div class="image-container center" role="presentation">
+              <img src="./Resources/Images/certifficate.png" alt="" />
+              <p>A health certifficate signed by a medic.</p>
+             </div>
+             <div class="image-container center" role="presentation">
+              <img src="./Resources/Images/payment.png" alt="" />
+              <p>An initial payment of 10£, either by transfer or cash.</p>
+             </div>
+             <div class="image-container center" role="presentation">
+              <img src="./Resources/Images/form.png" alt="" />
+              <p>The inscription form completed, either online or on paper.</p>
+             </div>
+            </div>
+         </article>
+        </main>
+        <aside>
+            <h2 class="center">Joining form:</h2>
+            <form class="center">
+             <label for="email">Email adress:</label>
+             <input type="email" name="email" id="email" required>
+             <label for="age">Age:</label>
+             <input type="age" name="age" id="age" required>
+             <label for="sports">Which sport do you want to play?</label>
+             <select name="sports" id="sports" required>
+                 <option value="soccer">Soccer</option>
+                 <option value="basketball">Basketball</option>
+                 <option value="swimming">Swimming</option>
+             </select>
+             <label for="extra">Any extra comments:</label>
+             <input name="extra" id="extra"></input>
+             <input type="submit" value="Submit" class="button">
+            </form>
+        </aside>
+        <footer>
+            <p>Email: loremipsum@samplemail.com</p>
+            <p>Address: Lorem Ipsum 999</p>
+            <h2><a href="../index.html" target="_blank">Visit More of my Projects</a></h2>
+        </footer>
+    </body>
+</html>

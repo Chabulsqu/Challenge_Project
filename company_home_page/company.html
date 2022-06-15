@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Paparolio Pizza</title>
+        <link rel="stylesheet" type="text/css" href="./Resources/reset.css">
+        <link rel="stylesheet" type="text/css" href="./Resources/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="charset" content="UTF-8">
+        <meta name="description" content="Order your favourite Paparolio pizza right from your house!">
+        <meta name="keywords" content="pizza, italia, pepperoni, handmade, delivery, food, restaurant">
+    </head>
+    <body>
+        <header>
+            <nav>
+            <ul class="desktop">
+                <li class="logo"><img src="Resources/Images/desktop_logo.png" alt="Paparolio"></li>
+                <li class="link first"><a href="#">Home</a></li>
+                <li class="link"><a href="#apply">Apply for a job</a></li>
+                <li class="link"><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="tablet">
+                <li class="logo"><img src="Resources/Images/desktop_logo.png" alt="Paparolio"></li>
+                <li class="link first"><a href="#"><img src="Resources/Images/home_logo.png" alt="Get back to the web header"></a></li>
+                <li class="link"><a href="#" class="button-primary">Order</a></li>
+                <li class="link"><a href="#"><img src="Resources/Images/contact_logo.png" alt="Contact us with our phone number"></a></li>
+            </ul>
+            <ul class="mobile">
+                <li class="logo"><img src="Resources/Images/mobile_logo.png" alt="Paparolio"></li>
+                <li class="link"><a href="#"><img src="Resources/Images/home_logo.png" alt="Get back to the web header" /></a></li>
+                <li class="link"><a href="#" class="button-primary">Order</a></li>
+                <li class="link"><a href="#"><img src="Resources/Images/contact_logo.png" alt="Contact us with our phone number"></a></li>
+            </ul>
+            </nav>
+        </header>
+            <main>
+            <section class="hero">
+                <h1 class="desktop">From the oven to your Table</h1>
+                <h2 class="mobile">Your pizza, always fresh</h2>
+                <h3 class="desktop">Our delicious, italian, handmade pizza, is prepared according to the newest health standards.</h3>
+                <h3 class="tablet">True Italian Pizza, delivered fresh</h3>
+            </section>
+            <section>
+                <h2>Order Section</h2>
+                <article>
+                    <div class="image-container">
+                     <img class="menu center" src="./Resources/Images/Barbecue.jpg" alt="" width="239" height="324">
+                     <h4>Barbecue</h4>
+                     <p>Cheese, Ham, Sausages, Bacon and BBQ Sauce</p>
+                     <a class="button-secondary center" href="#">Add to your Order</a>
+                    </div>
+                    <div class="image-container">
+                     <img class="menu center" src="./Resources/Images/Sweet.jpg" alt="" width="304" height="288">
+                     <h4>Sweet Pizza</h4>
+                     <p>Chocolate or cream, fruit and sugar, all on a pizza!</p>
+                     <a class="button-secondary center" href="#">Add to your Order</a>
+                    </div>         
+                    <div class="image-container">
+                     <img class="menu center" src="./Resources/Images/Vegetarian.jpg" alt="" width="288" height="384">
+                     <h4>Vegetarian</h4>
+                     <p>Cheese, Tofu and leaves</p>
+                     <a class="button-secondary center" href="#">Add to your Order</a>
+                    </div>
+                    <div class="image-container">
+                     <img class="menu center" src="./Resources/Images/Pepperonni.jpg" alt="" width="228" height="228">
+                     <h4>Pepperoni</h4>
+                     <p>Extra Cheese and Extra Pepperoni</p>
+                     <a class="button-secondary center" href="#">Add to your Order</a>
+                    </div>
+                    <div class="image-container">
+                     <img class="menu center" src="./Resources/Images/Rustic.jpg" alt="" width="252" height="336">
+                     <h4>Rustic</h4>
+                     <p>Cheese, Mushrooms, Olives, Peppers and Seeds.</p>
+                     <a class="button-secondary center" href="#">Add to your Order</a>
+                    </div>
+                </article>
+            </section>
+            </main>
+            <aside id="apply">
+                <h3 class="center">Apply for a job</h3>
+                <form class="center">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="years">Years of Experience</label>
+                <input type="number" id="years" name="years" min="1" max="5" required>
+                <br>
+                <label for="extra">Any extra information:</label>
+                <textarea rows="2" name="extra" id="extra"></textarea>
+                <br>
+                <input class="button-primary" type="submit" value="Apply">
+                </form>
+                <span class="center">You will be sent an email whenever your application is accepted or rejected</span>
+                <div id="flex">
+                <div class="image-container">
+                 <img src="./Resources/Images/ceo.jpg" alt="A photo of our CEO" width="256" height="384" />
+                 <br>
+                 <span>Our current CEO</span>
+                </div>
+                <div class="image-container">
+                 <img src="./Resources/Images/vice_ceo.jpg" alt="A photo of our Deputy CEO" width="192" height="288" />
+                 <br>
+                 <span>Our current Deputy Ceo</span>
+                </div>
+                </div>
+            </aside>
+            <footer id="contact">
+                <span class="desktop">copyright 2022 Paparolio</span>
+                <span>Phone: XXX-XXXX-XXX</span>
+                <h3 class="center"><a href="../index.html">Visit more of my projects</a></h3>
+            </footer>
+    </body>
+</html>

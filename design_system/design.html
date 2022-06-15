@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Web Design System</title>
+        <link rel="stylesheet" type="text/css" href="Resources/styles.css">
+        <link rel="icon" type="image/png" href="icon.png">
+        <meta name="charset" content="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="design, web_dev, development, css, html">
+    </head>
+    <body>
+        <header>
+            <h1>Mateo's Design System</h1>
+            <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#colors">Colours</a></li>
+                <lI><a href="#fonts">Fonts</a></lI>
+                <li><a href="#buttons">Buttons</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <br>
+            <h2>What is a design system?</h2>
+            <p>Greetings! A design system is a collection of files, articles, guilines, code snippets and other assets that a company or programmer uses. In this case this is the design system I will 
+            be using for my next Codeacdemy projects.</p>
+            <section class="colors" id="colors">
+                <h3>Colours</h3>
+                <p>When adding colours to a web page, it is very important to focus on the design and readability, for this you could use a colour palette with different values for each HTML element, 
+                here are some of mine, if you want to convert one to dark mode just change the original ones like I did in the table</p>
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Name</th>
+                        <th>Elements</th>
+                        <th>Colours</th>
+                        <th>Sample</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Vintage</td>
+                        <td class="code">header & footer; main; a; p; h1-h6</td>
+                        <td>#f5f5dc, #008b8b, #ff7f50, #696969, #483d8b</td>
+                        <td><div class="container"><span class="box beige"></span><span class="box darkcyan"></span><span class="box coral"></span><span class="box darkslateblue">
+                        </span><span class="box dimgrey"></span></div></td>
+                        </tr>
+                        <tr>
+                        <td>Elegant</td>
+                        <td class="code">header; footer & main; a; p; h1-h6; border</td>
+                        <td>#000, #ffebcd, 	#fff5ee, #808080, #f8f8ff</td>                        
+                        <td><div class="container"><span class="box black"></span><span class="box blanchedalmond"></span><span class="box seashell"></span><span class="box grey">
+                        </span><span class="box ghostwhite"></span></div></td>
+                        </tr>
+                        <tr>
+                        <td>Modern</td>
+                        <td class="code">header & h1-h6; footer; main; a; p</td>
+                        <td>#ea4b8b, #7f59b0, #63c5ea, #fcb424, #708090</td>
+                        <td><div class="container"><span class="box pink"></span><span class="box purple"></span><span class="box blue"></span><span class="box yellow">
+                        </span><span class="box slategrey"></span></div></td>
+                        </tr>
+                        <tr>
+                        <td colspan="4"><strong>Turn these designs into dark mode by changing their opacity and swapping background and foreground, for example:</strong></td>
+                        </tr>
+                        <tr>
+                        <td>Dark Modern</td>
+                        <td class="code">header & h1-h6; footer; main; a; p</td>
+                        <td>#ea4b8b88, #7f59b088, #708090, #fcb424, #63c5ea</td>
+                        <td><div class="container"><span class="box pinkdark"></span><span class="box purpledark"></span><span class="box slategrey"></span><span class="box yellow"></span>
+                        <span class="box blue"></span></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="fonts" id="fonts">
+                <h3>Fonts</h3>
+                <p>When making a website unique one of the most important things along color are fonts. Serif fonts are often used in large text because they are easier to read than the sans-serif ones, which are
+                often used in headings and appealing parts of the website. You can use a handwriting font if you want something more elegant or a monospace one if you are writing code! Remember to use 
+                <a href="https://www.cssfontstack.com/">web safe fonts</a> as an alternative to downloaded ones.</p>
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Font</th>
+                        <th>Thin</th>
+                        <th>Normal</th>
+                        <th>Bold</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td><a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a></td>
+                        <td class="montserrat thin">Hello world!</td>
+                        <td class="montserrat normal">Hello world!</td>
+                        <td class="montserrat bold">Hello world!</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://fonts.google.com/specimen/Roboto+Slab" target="_blank">Roboto Slab</a></td>
+                        <td class="roboto_slab thin">Hello world!</td>
+                        <td class="roboto_slab normal">Hello world!</td>
+                        <td class="roboto_slab bold">Hello world!</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://fonts.google.com/specimen/IBM+Plex+Mono" target="_blank">IBM Plex Mono</a></td>
+                        <td class="ibm thin">Hello world!</td>
+                        <td class="ibm normal">Hello world!</td>
+                        <td class="ibm bold">Hello world!</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://fonts.google.com/specimen/Ms+Madi" target="_blank">Ms Madi</a></td>
+                        <td class="ms_madi" colspan="3">Almost before we knew it, we had left the ground</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>Requesting a font with the Google fonts API</h4>
+                <span class="code"></span>
+            </section>
+            <section class="buttons" id="buttons">
+                <h3>Buttons</h3>
+                <p>Buttons make the interactive part of the website and are a key component of it. There are 2 main ways to style the buttons: skeuomorphic (the design of the button aims to recreate real life
+                buttons) and flat (the design of the button aims to create a more simplified, modern and intuitive look).</p>
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Button</th>
+                        <th>Skeuomorphic</th>
+                        <th>Flat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Square</td>
+                        <td><a href="#buttons" class="square skeu">Hello World!</a></td>
+                        <td><a href="#buttons" class="square flat">Hello World!</a></td>
+                        </tr>
+                        <tr>
+                        <td>Circular</td>
+                        <td><a  href="#buttons" class="circle skeu">Off</a></td>
+                        <td><a href="#buttons" class="circle flat">Off</a></td>
+                        </tr>
+                        <tr>
+                        <td>Beveled</td>
+                        <td><a href="#buttons" class="bevel skeu">Hello World!</a></td>
+                        <td><a href="#buttons" class="bevel flat">Hello World!</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>Coding a Button</h4>
+                <div class="images">
+                <img src="./Resources/Images/html.png" alt="the html code for buttons" width="1080" height="315"  />
+                <br>
+                <img src="./Resources/Images/css.png" alt="The css code for buttons" width="1080" height="1039" />
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h4>Other projects:</h4>
+            <p><a href="../Cheatsheet/index.html" target="_blank">Cheatsheet</a></p>
+            <p><a href="../Tea-Cozy/index.html" target="_blank">Tea Cozy</a></p>
+            <p>Github: @Chabulsqu</p>
+        </footer>
+    </body>
+</html>
