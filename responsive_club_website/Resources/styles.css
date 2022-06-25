@@ -1,14 +1,16 @@
 /* Index:
-1. Global Styles
+1. Page Styles
 2. Header and Nav
 3. Main
 4. Aside and Footer
 5. Media Queries
 */
 
-/* Global styles */
+/* Page styles */
+
 html {
     font-size: 16px;
+    height: 100%;
 }
 body {
     display: grid;
@@ -18,7 +20,7 @@ body {
                          "sports sports sports sports sports"
                          "join join join aside aside"
                          "footer footer footer footer footer";
-    grid-template-rows: 7.5rem 45rem 45rem 35rem 7.5rem;
+    grid-template-rows: 5% 40% 35% 35% 7.5%;
     grid-template-columns: repeat(5, 20%);
     overflow-x: hidden;
 }
@@ -26,12 +28,12 @@ h1 {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 500;
     font-size: 5rem;
-    color: hsl(224, 100%, 13%);
+    color: hsl(316, 82%, 53%);
     line-height: 1.75;
 }
 
 h2, h3, h4 {
-    color: hsl(126, 100%, 92%);
+    color: hsl(193, 97%, 47%);
     font-family: "Montserrat", Arial, sans-serif;
     font-weight: 300;
     line-height: 1.25;
@@ -46,47 +48,53 @@ h4 {
     font-size: 2rem;
 }
 a, p, label {
-    color: hsl(126, 100%, 92%);
+    color: hsl(305, 100%, 75%);
     font-size: 1.5rem;
     font-family: "Merriweather", "Times New Roman", serif;
 }
 .hero p {
-    color: hsl(320, 100%, 84%);
+    color: hsl(316, 82%, 53%);
+}
+footer p {
+    color: hsl(193, 97%, 47%);
 }
 p {
     font-size: 1.2rem;
 }
 a {
-    color: hsl(198, 78%, 64%);
+    color: hsl(213, 100%, 15%);
 }
 a:hover {
     text-decoration: underline;
 }
+a:active {
+    color: hsl(213, 100%, 45%);
+}
 
 .sports, .join, aside {
-    background-color: hsl(55, 57%, 38%);
+    background-color: hsl(213, 100%, 15%);
 }
 header, footer {
-    background-color: hsl(224, 100%, 13%);
+    background-color: hsl(316, 82%, 53%);
 }
 
 ul {
     position: relative;
-    top: -2.5rem;
+    top: -1.5%;
     left: 65%;
     width: 35%;
 }
 input, select, textarea {
-    margin: 1.75rem auto;
+    margin: 5% auto;
     display: block;
-    border-radius: .4rem;
+    border-radius: 10%;
 }
 
 .image-container {
     box-sizing: border-box;
     width: 166.666666667%;
-    margin: 1rem;
-    padding: 1rem;
+    margin: .75%;
+    padding: .75%;
 }
 .flex {
     display: flex;
@@ -97,36 +105,38 @@ input, select, textarea {
     text-align: center;
 }
 .button {
-    padding: .5rem;
+    padding: .4%;
     font-family: 'Montserrat', Arial, sans-serif;
-    border-radius: .4rem;
+    border-radius: .3%;
     width: 25%;
-    background-color: hsl(320, 100%, 84%);
-    color: hsl(224, 100%, 13%);
+    background-color: hsl(305, 100%, 75%);
+    color: hsl(213, 81%, 27%);
 }
 header li.button {
     margin-top: 0;
     position: relative;
-    bottom: .9rem;
+    bottom: .75%;
+    border-radius: 10%;
+    padding: .4rem;
 }
 
 /* Header and Nav */
 
 header {
-    height: 7.5rem;
+    height: 100%;
     grid-area: header;
 }
 header li, .logo {
     display: inline-block;
-    margin: .5rem .75rem;
+    margin: 0% 5%;
 }
 
 /* Main */
 
 .hero {
     width: 500%;
-    height: 45rem;
-    background-image: url('./Images/hero_background.jpg');
+    height: 100%;
+    background-image: url('./Images/hero_background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -134,16 +144,16 @@ header li, .logo {
 }
 .sports {
     width: 500%;
-    height: 45rem;
+    height: 100%;
     grid-area: sports;
 }
 .sports .image-container {
-    border: .25rem solid hsl(198, 78%, 64%);
+    border: .25rem solid hsl(193, 97%, 47%);
     border-radius: .25rem;
 }
 .join {
     width: 300%;
-    height: 35rem;
+    height: 80%;
     grid-area: join;
 }
 .join .flex {
@@ -154,12 +164,12 @@ header li, .logo {
 
 aside {
     width: 100%;
-    height: 35rem;
+    height: 100%;
     grid-area: aside;
 }
 footer {
     width: 100%;
-    height: 7.5rem;
+    height: 100%;
     grid-area: footer;
 }
 
@@ -167,10 +177,10 @@ footer {
 
 @media only screen and (min-width: 1025px) {
     .sports img {
-        width: 17rem;
+        width: 75%;
     }
     .join img {
-        width: 8rem;
+        width: 50%;
     }
     .mobile, .tablet {
         display: none;
@@ -178,14 +188,20 @@ footer {
  }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
     body {
-        grid-template-rows: 7.5rem 45rem 45rem 35rem 37rem;
+        grid-template-rows: 5% 40% 30% 45% 35%;
     }
     .hero img {
-        width: 17rem;
+        width: 32%;
     }
     .sports img {
-        width: 14rem;
+        width: 40%;
+    }
+    .join {
+        height: 110%;
     }
     .dekstop, .hero .desktop, .mobile {
         display: none;
@@ -197,13 +213,13 @@ footer {
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     body {
-        grid-template-rows: 7.5rem 45rem 30rem 38rem 15rem;
+        grid-template-rows: 5% 40% 15% 25% 6%;
     }
     .hero img {
-        width: 15rem;
+        width: 30%;
     }
     .sports img {
-        width: 12rem;
+        width: 80%;
     }
     .desktop li, p.desktop, .mobile {
         display: none;
@@ -212,17 +228,26 @@ footer {
         display: block;
     }
     .sports {
-        height: 30rem;
+        height: 50%;
     }
     .join, aside {
-        height: 38rem;
+        height: 100%;
+    }
+    .join {
+        height: 50%;
+    }
+    footer {
+        height: 110%;
     }
  }
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
     body {
         grid-template-columns: 100%;
-        grid-template-rows: 9rem 40rem 50rem 35rem 35rem 10rem;
+        grid-template-rows: 8% 40% 40% 25% 25% 7.5%;
         grid-template-areas: "header"
         "hero"
         "sports"
@@ -230,33 +255,36 @@ footer {
         "aside"
         "footer";
     }
+    header .logo {
+        width: 35%;
+    }
     .hero img {
-        width: 12rem;
+        width: 50%;
     }
     .sports img {
-        width: 10rem;
+        width: 50%;
     }
     header {
         width: 100%;
-        height: 9rem;
+        height: 100%;
     }
     .hero {
         width: 100%;
-        height: 40rem;
+        height: 100%;
         background-image: none;
         background-color: hsl(198, 78%, 64%);
     }
     .sports {
         width: 100%;
-        height: 50rem;
+        height: 100%;
     }
     .join, aside {
         width: 100%;
-        height: 35rem;
+        height: 120%;
     }
     footer {
         width: 100%;
-        height: 10rem;
+        height: 100%;
     }
     .desktop {
         display: none;
@@ -266,14 +294,23 @@ footer {
     }
     .logo {
         position: relative;
-        top: -2.5rem;
+        top: -10%;
         width: 40%;
-        height: 7.5rem;
+        height: 5%;
     }
     .hero .flex {
         display: none;
     }
-    .flex {
+    header ul.mobile {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .sports .flex {
         flex-wrap: wrap;
+    }
+    header ul.mobile li {
+        position: relative;
+        bottom: 80px;
+        left: -60px;
     }
 }
