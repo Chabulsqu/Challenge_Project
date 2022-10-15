@@ -18,7 +18,7 @@ To run any project except the ones made with Javascript alone (Credit Card Check
 ![The github Code button is located at the top right of the respository](/diagram.png)
 
 ## How to contribute to this repository
-In each project you will find a brief description of the scope of the web/scrip. if you have noticed an error and want to help, feel free to do so but keep in mind that I am aware of some issues like:
+if you have noticed an error and want to help, feel free to do so but keep in mind that I am aware of some issues like:
 - Lack of responsiveness and accessibility on the first 3 projects
 
 #### Support me
